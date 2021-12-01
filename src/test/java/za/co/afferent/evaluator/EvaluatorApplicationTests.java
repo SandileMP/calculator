@@ -33,16 +33,11 @@ class EvaluatorApplicationTests {
 		Assertions.assertEquals(8.0, result);
 	}
 	@Test
-	public void givenInvalidExpression_Success() {
+	public void givenInvalidExpression() {
 		String expression = "";
 		Double result = algebraService.workExpression(expression);
 		Assertions.assertEquals(0.0, result);
 	}
-	@Test
-	public void givenInvalidExpression_Fail() {
-		String expression = "";
-		Double result = algebraService.workExpression(expression);
-		Assertions.assertEquals(3, result);
-	}
+
 
 }
